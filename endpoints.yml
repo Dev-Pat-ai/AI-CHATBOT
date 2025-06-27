@@ -40,3 +40,15 @@
 #  username: username
 #  password: password
 #  queue: queue
+
+
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Uncomment and configure if using a tracker store
+# tracker_store:
+#   type: mongod
+#   url: mongodb://localhost:27017
+#   db_name: rasa
+#   username: 
+#   password:

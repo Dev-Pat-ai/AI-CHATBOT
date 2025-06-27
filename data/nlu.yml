@@ -3,89 +3,118 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
     - hello
     - hi
-    - hello there
     - good morning
-    - good evening
-    - moin
     - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
+    - hi there
     - good afternoon
+    - good evening
 
-- intent: goodbye
+- intent: request_produce
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - I'm looking to purchase [200kg](quantity) of [organic tomatoes](produce_type)
+    - Do you have [250kg](quantity) of [tomatoes](produce_type) available?
+    - I need [100kg](quantity) of [organic carrots](produce_type)
+    - Looking for [300kg](quantity) of [fresh vegetables](produce_type)
+    - Can I buy [150kg](quantity) of [potatoes](produce_type)?
+    - I want to purchase [organic tomatoes](produce_type)
+    - Need [tomatoes](produce_type) for this week
+    - Do you have [carrots](produce_type) available?
 
-- intent: affirm
+- intent: ask_price
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - What's your current price per kg?
+    - How much per kilogram?
+    - What are your rates?
+    - Price per kg?
+    - What's the cost?
+    - How much does it cost?
+    - What's your pricing?
 
-- intent: deny
+- intent: confirm_order
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - That works for us
+    - Perfect
+    - I'll take it
+    - Confirmed
+    - Yes, let's proceed
+    - Sounds good
+    - I agree
+    - Let's confirm the order
 
-- intent: mood_great
+- intent: ask_delivery
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - Can delivery be arranged?
+    - Do you deliver?
+    - What about delivery?
+    - Can you arrange delivery?
+    - How does delivery work?
 
-- intent: mood_unhappy
+- intent: thank
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - thank you
+    - thanks
+    - thank you very much
+    - thanks a lot
+    - appreciate it
 
-- intent: bot_challenge
+- intent: ask_availability
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Do you have availability this week?
+    - When will it be ready?
+    - Is it available now?
+    - Do you have stock?
+
+- intent: get_started
+  examples: |
+    - getting started
+    - get started
+    - how to start
+    - begin
+    - start
+
+- intent: how_it_works
+  examples: |
+    - how it works
+    - how does this work
+    - explain the process
+    - tell me how this works
+
+- intent: about_seedsync
+  examples: |
+    - about seedsync
+    - tell me about seedsync
+    - what is seedsync
+    - seedsync info
+
+- intent: check_locations
+  examples: |
+    - check locations
+    - where are you located
+    - locations
+    - find locations
+
+- intent: farmer_seller
+  examples: |
+    - I'm a farmer
+    - I want to sell
+    - I have produce to sell
+    - I'm selling crops
+    - I'm a seller
+
+- intent: buyer
+  examples: |
+    - I'm a buyer
+    - I want to buy
+    - I need produce
+    - I'm looking to purchase
+    - I'm a buyer
+
+- intent: decision_pending
+  examples: |
+    - Decision?
+    - Let me think
+    - I need to decide
+    - Not sure yet
+    - Maybe
